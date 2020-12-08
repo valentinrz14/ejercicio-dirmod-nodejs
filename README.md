@@ -1,7 +1,5 @@
 # Ejercicio de Cotizaciones API RESTFUL
 
-echo por Valentin Rodriguez
-
 ## Demo
 
 ## Instrucciones

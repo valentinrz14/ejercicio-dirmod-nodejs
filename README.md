@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://ejercicio-dirmod-nodejs.herokuapp.com/api/cotizaciones/
+#### https://ejercicio-dirmod-nodejs.herokuapp.com/api/cotizaciones/
 
 ## Instrucciones
 
@@ -15,5 +15,6 @@ https://ejercicio-dirmod-nodejs.herokuapp.com/api/cotizaciones/
 ### "axios", "express" ,"nodemon"
 
 ## API de Cotizaciones donde obtengo los valores
-### (Se necesita una clave)
-### https://api.cambio.today/v1/quotes/CLP/ARS/json?quantity=1
+
+#### (Se necesita una clave).
+#### https://api.cambio.today/v1/quotes/CLP/ARS/json?quantity=1

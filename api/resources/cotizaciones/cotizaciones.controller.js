@@ -7,14 +7,18 @@ const {
   ARRAY_NOMBES,
 } = require("../constants");
 
-// funcion para traer los valores de las monedas y almacenarlos en un array
-const cotizaciones = ARRAY_MONEDAS.map(async (value) => {
-  const response = await axios.get(
-    `${API_URL}/${value}/ARS/json?quantity=1&key=${API_KEY}`
-  );
-  const { result } = await response.data;
-  return { result };
-});
+let cotizaciones = "";
+// funcion de intervalo para actualizar cada 5 segundos los datos que devuelve la api
+setInterval(() => {
+  // funcion para traer al inicio del servidor los valores de las monedas y almacenarlos en un array
+  cotizaciones = ARRAY_MONEDAS.map(async (value) => {
+    const response = await axios.get(
+      `${API_URL}/${value}/ARS/json?quantity=1&key=${API_KEY}`
+    );
+    const { result } = await response.data;
+    return { result };
+  });
+}, 5000);
 // funcion para retornar los valores con diferentes nombres
 const fecthNewCotizaciones = async () => {
   // Resuelvo todas las promesas

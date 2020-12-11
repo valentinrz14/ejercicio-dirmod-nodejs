@@ -1,7 +1,7 @@
 // Url del servicio a llamar
 const API_URL = "https://api.cambio.today/v1/quotes";
 // Key del servicio
-const API_KEY = "6419|17s8sbBHrKaoVt96nXCEfPVS^KzfeuZo";
+const API_KEY = "6381|GcDjZTvuVRutX872JQ7j5d8dw9fZoshX";
 // Array de Monedas a llamar en el servicio
 const ARRAY_MONEDAS = [
   "USD",
